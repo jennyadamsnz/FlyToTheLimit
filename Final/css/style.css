@@ -1,0 +1,1099 @@
+*	{
+	margin: 0;
+	padding: 0;
+}
+html {
+/*	background-image: url("../images/background1.jpg");*/
+	background-color: black;
+	background-attachment: fixed;
+	z-index: -1;
+}
+/*===================HEADER==========================*/
+header {
+	margin-bottom: 20px;
+}
+header>div {
+	text-align: center;
+	width: 440px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+#logo {
+	margin: 10px 0 20px 0;
+}
+
+/*==================BODY==============================*/
+body {
+	color: rgb(129, 129, 129);
+	font-family: arial;
+}
+main {
+	width: 75%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 5px 10px 5px rgba(0,0,0,.2);
+	border-radius: 2px 2px 2px 2px;
+	font-family: arial;	
+}
+header, main {
+	position: relative;
+	z-index: 1000;
+}
+.centering {
+	text-align: center;
+}
+
+#header_inner{
+	height: 100%;
+}
+#slidshow_text {
+	position: relative;
+}
+h2, h3 {
+	font-family: Andale Mono;
+	font-size: 100%;
+}
+h5 {
+	font-family: Andale Mono;
+	font-size: 100%;
+	text-align: left;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+h6 {
+	font-family: Andale Mono;
+	font-size: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+sup {
+	font-size: 50%;
+}
+.tiny_font {
+	font-size: 80%;
+	margin: 10px 0 10px 0;
+}
+li {
+	list-style: none;
+	font-size: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+i {
+	font-size: 75%;
+}
+input, textarea {
+	box-sizing: border-box;
+
+	width: 100%;
+	height: 35px;  
+	border: solid 2px rgba(129, 129, 129, 0.8);
+	border-radius: 5px;
+	padding: 3px 0 0 10px;
+	font-size: 80%;
+	resize: none;
+	margin-top: 10px;
+	color: #666;
+}
+.subtitle {
+	margin-bottom: 10px;
+}
+#blue_font {
+	color: rgb(7, 157, 220)
+}
+#space_above {
+	margin-top: 40px;
+}
+.video_container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 65%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100%;
+    border: none;
+}
+/*===================BACKGROUND DOT NAV ANIMATION=============---*/
+.background_selectors,
+.background_selectors:after { 
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+.background_selectors_container {
+}
+.background_selectors {
+	width: 100px;
+	height: 50px;
+	top: 10px;
+	width: 50%;
+}
+.background_selectors li span {
+	position: absolute;
+	width: 280px;
+	height: 50px;
+	left: 50%;
+	margin-left: -140px;
+
+    color: transparent;
+    background-position: top center;
+    background-repeat: no-repeat; 
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: dotAnimation 72s linear infinite 0s;
+    -moz-animation: dotAnimation 72s linear infinite 0s;
+    -ms-animation: dotAnimation 72s linear infinite 0s;
+    animation: dotAnimation 72s linear infinite 0s; 
+}
+
+.background_selectors li#dot_nav1 span  { 
+    background-image: url("../images/dot_nav1.png");
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    -ms-animation-delay: -3s;
+    animation-delay: -3s; 
+}
+.background_selectors li#dot_nav2 span { 
+    background-image: url("../images/dot_nav2.png");
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+.background_selectors li#dot_nav3 span { 
+    background-image: url("../images/dot_nav3.png");
+    -webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    -ms-animation-delay: 21s;
+    animation-delay: 21s; 
+}
+.background_selectors li#dot_nav4 span { 
+    background-image: url("../images/dot_nav4.png");
+    -webkit-animation-delay: 33s;
+    -moz-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s; 
+}
+.background_selectors li#dot_nav5 span { 
+    background-image: url("../images/dot_nav5.png");
+    -webkit-animation-delay: 45s;
+    -moz-animation-delay: 45s;
+    -ms-animation-delay: 45s;
+    animation-delay: 45s; 
+}
+.background_selectors li#dot_nav6 span { 
+    background-image: url("../images/dot_nav6.png");
+    -webkit-animation-delay: 57s;
+    -moz-animation-delay: 57s;
+    -ms-animation-delay: 57s;
+    animation-delay: 57s; 
+}
+/* Animation for slideshow dot nav */
+@keyframes dotAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/*===================BACKGROUND SLIDESHOW=================*/
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    z-index: 0; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: transparent;
+    background-position: top center;
+	/*background-attachment: fixed;*/
+    background-repeat: no-repeat; 
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 72s linear infinite 0s;
+    -moz-animation: imageAnimation 72s linear infinite 0s;
+    -ms-animation: imageAnimation 72s linear infinite 0s;
+    animation: imageAnimation 72s linear infinite 0s; 
+}
+.cb-slideshow li#background_image1 span { 
+    background-image: url("../images/background1.jpg");
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    -ms-animation-delay: -3s;
+    animation-delay: -3s; 
+}
+.cb-slideshow li#background_image2 span { 
+    background-image: url("../images/background2.jpg");
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+.cb-slideshow li#background_image3 span { 
+    background-image: url("../images/background3.jpg");
+    -webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    -ms-animation-delay: 21s;
+    animation-delay: 21s; 
+}
+.cb-slideshow li#background_image4 span { 
+    background-image: url("../images/background4.jpg");
+    -webkit-animation-delay: 33s;
+    -moz-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s; 
+}
+.cb-slideshow li#background_image5 span { 
+    background-image: url("../images/background5.jpg");
+    -webkit-animation-delay: 45s;
+    -moz-animation-delay: 45s;
+    -ms-animation-delay: 45s;
+    animation-delay: 45s; 
+}
+.cb-slideshow li#background_image6 span { 
+    background-image: url("../images/background6.jpg");
+    -webkit-animation-delay: 57s;
+    -moz-animation-delay: 57s;
+    -ms-animation-delay: 57s;
+    animation-delay: 57s; 
+}
+/* Animation for the slideshow images */
+@keyframes imageAnimation { 
+    0% { opacity: 0}
+    8% { opacity: 1}
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/*===================TEXT SLIDESHOW=================*/
+#borders {
+	height: 80px;
+	width: 430px;
+	border-top: solid white;
+	border-bottom: solid white;
+	margin: 0 auto;
+}
+.titles h1 {
+	font-family: arial;
+	color: white;
+}
+#title1{
+	padding-left: 55px;
+}
+#title2{
+	padding-left: 20px;
+}
+#title3 {
+	padding-left: 30px;
+}
+#title4 {
+	padding-left: 45px;
+}
+#title5 {
+	padding-left: 85px;
+}
+#title6 {
+	padding-left: 50px;
+}
+.titles li div { 
+	position: absolute;
+	top: 210px;
+	text-align: center;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: titleAnimation 72s linear infinite 0s;
+    -moz-animation: titleAnimation 72s linear infinite 0s;
+    -ms-animation: titleAnimation 72s linear infinite 0s;
+    animation: titleAnimation 72s linear infinite 0s; 
+}
+.titles li:nth-child(1) div { 
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    -ms-animation-delay: -3s;
+    animation-delay: -3s; 
+}
+.titles li:nth-child(2) div { 
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+.titles li:nth-child(3) div { 
+    -webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    -ms-animation-delay: 21s;
+    animation-delay: 21s; 
+}
+.titles li:nth-child(4) div { 
+    -webkit-animation-delay: 33s;
+    -moz-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s; 
+}
+.titles li:nth-child(5) div { 
+    -webkit-animation-delay: 45s;
+    -moz-animation-delay: 45s;
+    -ms-animation-delay: 45s;
+    animation-delay: 45s; 
+}
+.titles li:nth-child(6) div { 
+    -webkit-animation-delay: 57s;
+    -moz-animation-delay: 57s;
+    -ms-animation-delay: 57s;
+    animation-delay: 57s; 
+}
+/* Animation for slideshow text */
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/*================SECTIONING=================*/
+.form_dimensions {
+	display: inline-block;
+	height: 100%;
+	width: 42.85%;
+	margin: 0px 14.28% 30px 14.28%;
+}
+.form_group {
+	width: 100%;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.one_column {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 0px 20% 0;
+}
+.two_columns {
+	width: 39.25%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 21.5% 15px 0px;
+}
+.three_columns {
+	width: 30%;
+	display: inline-block;
+	margin-right: 5%;
+}
+.five_columns {
+	float: left;
+	display: inline-block;
+	margin-right: 1.25%;
+	width: 19%;
+	height: 19%;
+}
+#five_column_gap {
+	margin-right: 21.5%;
+}
+.seven_columns {
+	float: left;
+	display: inline-block;
+	margin-right: 0.33333%;
+	width: 14%;
+	height: 14%;
+}
+.last_box_no_margin {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+/*============SIDEBAR=============*/
+.sidebar_section {
+	vertical-align: top;
+	height: 100%;
+	width: 27.57%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0px 3.57% 20px 6%;
+	margin: 10px 0px 20px 0px;
+	border-left: solid 8px rgba(129, 129, 129, 0.1);
+}
+.phone_icon, .google_map_icon {
+	width: 60px;
+	height: 60px;
+	margin: 10px 0px 20px 0px;
+	display: inline-block;
+}
+.phone_icon {
+	padding-right: 15px;
+}
+
+/*======================CALENDAR========================*/
+.calendar{
+	position: relative;
+	width: 200px;
+	height: 100px;
+}
+#calendar_img {
+	height: 150px;
+	width: 125px;
+	display: inline-block;
+}
+#mydate {
+	position: relative;
+	width: 100%;
+	top: -375px;
+	left: 14.5%;
+}
+
+#my_calendar {
+	top: 0 !important;
+	left: 0 !important;
+	display: inline-block !important;
+}
+
+/*========================BUTTONS=======================*/
+.passenger_img {
+	width: 90%;
+}
+.aircraft_button_img {
+	width: 80%;
+	padding: 5px 7px 5px 3px;
+}
+.aircraft_button_side_text {
+	margin-top: 20%;
+}
+#button_A:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#button_B:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#button_C:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#button_D:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+.normal_button {
+	/*clearing chrome default styling*/
+	border: none;
+
+	display: inline-block;
+    text-align: center;
+	outline: none;
+	font-size: 18px;
+	color: white;
+	background-color: rgb(7, 157, 220);
+	width: 100%;
+	height: 100%;
+	padding: 5px 0 5px;
+	border-radius: 4px;
+	box-shadow: inset -2px -2px 0px 1px #9FA3A5, -2px -2px 0px 1px rgb(255, 255, 255); 
+	background: linear-gradient(#75D6FF, #0778A9);
+	cursor: pointer;
+}
+.normal_button>button:focus {
+	outline-style: none;
+}
+.button_label1, .button_label2 {
+	/*clearing chrome default styling*/
+	border: none;
+
+	font-family: arial;
+	font-size: 18px;
+	color: white;
+	background-color: rgb(7, 157, 220);
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: inset -2px -2px 0px 1px #9FA3A5, -2px -2px 0px 1px rgb(255, 255, 255); 
+	background: linear-gradient(#75D6FF, #0778A9);
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+.button_label1 {
+	width: 100%;
+	height: 100%;
+	padding: 5px 5px 5px 5px;
+}
+.hidden {
+	display: none;
+}
+#drop_off:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#pick_up:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#re_stock:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#day_trip:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button1:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button2:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button3:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button4:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button5:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button6:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#passenger_button7:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#cessna_button:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#second_cessna_button:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#helicopter_button:checked +.button_label2 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#thirty_min_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#sixty_min_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#doors_on_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#doors_off_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+.button_container1, .button_container2 {
+	width: 40%;
+	display: inline-block;
+	height: 100%;
+	margin: 15px 0px 15px 0px;
+}
+.button_container1 {
+	margin: 0px 20% 0px 0px;
+}
+.inner_button_box {
+	width: 50%;
+	display: inline-block;
+}
+#large_heli_icon {
+	padding-top: 20px;
+}
+
+/*=======================MENU BAR====================*/
+.menu_bar {
+	margin-bottom: 3%;
+}
+.menu_bar>ul {
+	border: solid white 2px;
+	border-bottom: solid #ebdd3f 10px;
+	display: flex;
+	height: 60px;
+	border-radius: 2px 2px 0px 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.yellow_selection, .yellow_top {
+	height: 61px;
+	width: 14.28%;
+	background: linear-gradient(#75D6FF, #0778A9);
+	box-sizing: border-box;
+	font-family: Andale Mono;
+	font-size: 110%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	border-right: solid rgba(255, 255, 255, 0.1) 2px;
+}
+.yellow_selection:hover {
+	background: linear-gradient(#f0d938, #f0d938);
+}
+.no_line {
+	border-right: none;
+}
+.yellow_top {
+	background: linear-gradient(#f0d938, #f0d938);
+}
+/*=========================HOME PAGE======================*/
+.welcome_box {
+	width: 80%;
+	height: 60px;
+	padding: 40px 0 10px 0;
+	border-bottom: solid rgba(7, 157, 220, 0.3) 5px;
+	margin: 0 auto;
+}
+.welcome_heading {
+	width: 28%;
+	height: 50px;
+	text-align: left;
+	padding: 3px 0 0 10px;
+	display: inline-block;
+	font-size: 27px;
+	color: rgba(7, 157, 220, 0.5);
+}
+.welcome_message {
+	width: 68%;
+	height: 60px;
+	margin-left: 10px;
+	padding-left: 10px;
+	text-align: left;
+	display: inline-block;
+	float: right;
+	font-family: arial;
+}
+.welcome_message>p {
+	font-size: 90%;
+}
+#fleet_list {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 40px;
+	padding-bottom: 20px;
+	font-family: arial;
+	margin-left: 10%;
+}
+.cessna_box {
+	float: left;
+	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+}
+.fleet_box {
+	display: inline-block;
+	margin: 25px 0 25px 0;
+	width: 32%;
+}
+.fleet_box>p {
+	font-size: 12px;
+	display: inline-block;
+}
+.fleet_box>.small_font {
+	font-size: 11px;
+}
+/*===================SCENIC FLIGHTS PAGE===============*/
+.section {
+	width: 28.57%;
+	margin: 0px 7.14% 40px 7.14%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.scenic_page_img {
+	width: 100%;
+}
+.section>p {
+	font-family: arial;
+	font-size: 100%;
+	margin: 20px 0 20px 0;
+}
+.aircraft_and_text_box {
+	display: inline-block;
+	width: 50%;
+	margin: 15px 0 15px 0;
+	vertical-align: middle;
+}
+.aircraft_and_text_box_long {
+	display: inline-block;
+	width: 100%;
+}
+.aircraft_and_text_box>img, .aircraft_and_text_box>.button_container3 {
+	float: left;
+	display: inline-block;
+	margin-right: 5%;
+	width: 35%;
+	height: 35%;
+	top: 0;
+	left: 0;
+}
+.aircraft_and_text_box_long>img, .aircraft_and_text_box_long>.button_container3 {
+	float: left;
+	display: inline-block;
+	margin-right: 3.125%;
+	width: 17.5%;
+	height: 17.5%;
+}
+.aircraft_and_text_box>.large_font {
+	width: 60%;
+	display: inline-block;
+	font-size: 100%;
+	padding-top: 6px;
+}
+.aircraft_and_text_box>.small_font {
+	width: 60%;
+	display: inline-block;
+	font-size: 90%;
+	padding-top: 6px;
+
+}
+.aircraft_and_text_box>.small_font_special {
+	font-size: 90%;
+	display: inline-block;
+	padding-left: 10%;
+}
+
+.section>.book_button {
+	width: 100%;
+}
+/*=============HIGH THRILLS BOOKING FORM===============*/
+.high_thrills_booking_form {
+	display: inline-block;
+	height: 100%;
+	width: 42.85%;
+	margin: 0px 14.28% 0px 14.28%;
+}
+.high_thrills_booking_form>p {
+	margin-bottom: 10px;
+}
+.large_aircraft_icon {
+	height: 90%;
+	width: 90%;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+#seven_am_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#nine_am_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#twelve_pm_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+#three_pm_button:checked +.button_label1 {
+	background: rgba(129, 129, 129, 0.8);
+	box-shadow: none;
+	cursor: default;
+}
+/*===================CUSTOM CHARTERS===================*/
+.custom_charters_aircraft>.fleet_box>.cessna_box {
+	float: left;
+	margin-right: 5px;
+	width: 55%;
+	height: 55%;
+}
+.custom_charters_aircraft>.fleet_box {
+	display: inline-block;
+	margin: 10px 0 20px 0;
+	width: 33.3%;
+}
+.custom_charters_aircraft>.fleet_box>p {
+	display: inline-block;
+	padding-top: 20%;
+}
+.custom_charters_aircraft>.fleet_box>.small_font {
+	font-size: 65%;
+}
+#custom_charter_additional_details {
+	height: 200px;
+	margin-top: 0px;
+}
+/*===============TRAMPER SERVICES===================*/
+.tramper_font {
+	font-size: 100%;
+}
+
+/*===============TRAMPER SERVICES BOOKING FORM======*/
+#additional_details {
+	height: 100px;
+	margin-top: 0px;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown_align_top {
+	vertical-align: top;	
+}
+.dropdown_align_top_no_margin {
+    display: inline-block;
+    margin-right: 0;
+	margin-bottom: 0;
+	vertical-align: top;
+}
+.dropdown-content {
+    opacity:0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .8s ease;   
+}
+.show {
+    opacity:1;
+    height: 150px;
+}
+/*===================OUR GALLERY===================*/
+#gallery {
+	position: relative;
+	width: 71.43%;
+	margin: 0 auto;
+	display: inline-block;
+	margin-bottom: 20px;
+
+	/*===makes anything outside of the div hidden:*/
+	overflow: hidden;
+}
+figure {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	opacity: 0;
+	transition: 1s opacity;
+	margin-bottom: -6px;
+}
+figure img {
+	width: 100%;
+}
+figure.showGallery {
+	opacity: 1;
+	transition: 1s opacity;
+	position: static;
+}
+span {
+	width: 100%;
+	vertical-align: middle;
+
+}
+.arrow_img {
+	width: 40%;
+}
+.arrow_img:hover {
+	cursor: pointer;	
+}
+.prev {
+	display: inline-block;
+	float:left;
+	margin-top: 20%;
+}
+.next {
+	display: inline-block;
+	float: right;
+	margin-top: 20%;
+}
+.pager {
+	display: inline-block;
+	text-align: center;
+	z-index: 1;
+}
+.pager li {
+	display: inline-block;
+	width: 16.66%;
+}
+.thumbnail {
+	width: 100%;
+	display: inline-block;
+}
+/*===================ABOUT US===================*/
+.about_us_1column {
+	width: 42.85%;
+	margin: 0px 7.14% 40px 7.14%;
+	display: inline-block;
+	text-align: left;
+}
+.about_us_2columns {
+	width: 28.57%;
+	margin: 10px 7.14% 20px 7.14%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.about_us_1column>p, .about_us_2columns>p {
+	margin: 20px 0 20px 0;
+}
+.olga_and_bruce_img {
+	text-align: center;
+	width: 100%;
+}
+.about_us_img {
+	width: 100%;
+}
+/*===================CONTACT US========================*/
+#message_field {
+	height: 150px;
+	padding-top: 5px;
+	margin-top: 10px;
+}
+
+.contact_us_form {
+	display: inline-block;
+	height: 100%;
+	width: 42.85%;
+	padding-bottom: 30px;
+	margin: 20px 14.28% 0px 14.28%;
+}
+.contact_us_form2 {
+	padding: 30px 0px 10px 0px; 
+}
+/*=============CONTACT US CONFIRMATION=================*/
+.centered_signoff {
+	text-align: center;
+	padding-top: 20px;
+}
+.margin_box {
+	padding-bottom: 30px;
+	display: inline;
+}
+/*===================FOOTER============================*/
+footer {
+	border-top: solid white 1.5px;
+	background-color: rgba(7, 157, 220, 0.9);
+	color: white;
+	font-family: Andale Mono;
+	margin-top: 30px;
+	height: 150px;
+}
+footer {
+	position: relative;
+	z-index: 1000;
+}
+.footer_box {
+	display: flex;
+	margin: 0 auto;
+	width: 60%;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+footer>ul {
+	width: 20%;
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+}
+footer>ul>li {
+	color: white;
+	display: block;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.footer_title {
+	color: #ebdd3f;
+	margin: 10px 0px 10px 0px;
+}
+.large_footer_font {
+	font-size: 50px;
+}	
+#social_media {
+	margin-top: 20px;
+}
+
+/*==========================FORM VALIDATION================*/
+.invalid {
+	background-color: 255, 255, 255;
+	border-color: rgb(7, 157, 220);
+}
+.warning {
+	color: rgb(7, 157, 220);
+	font-size: 80%;
+	padding: 5px 0px 0px 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+/*==========PRINT STYLESHEET FOR "SCENIC FLIGHTS" PAGE=============*/
+
+@media print {
+
+	header {
+		display:none;
+	}
+	.menu_bar {
+		display:none;
+	}
+	main:before {
+		content: "Thank you for visiting Fly to the Limit. We look forward to flying with you!";
+		margin-left: 70px;
+	}
+	main {
+		box-shadow: none;
+		width: 100%;
+		background: none;
+		margin-top: 20px;
+	}
+	.section {
+		width: 35%;
+		margin: 20px 30px 40px 30px;
+	}
+	.aircraft_and_text_box {
+		display: block;
+		width: 70%;
+		padding-bottom: 10px;
+	}
+	button {
+		display:none;
+	} 
+	footer {
+		display:none;
+	}
+}

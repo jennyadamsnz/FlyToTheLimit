@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<meta name="author" content="Jenny Adams">
+			<meta name="description" content="Fly to the Limit Professional Photography Booking Form where you can book your specialised scenic flight to get great pictures and with the option of removing aircraft doors with prior notice">
+			<meta name="keywords" content="Professional Photography, Scenic Flight, Queenstown, Wanaka, flying, New Zealand, aviation, tours, helicopter, plane, cessna, Book">	
+		<title>FTTL Professional Photography Booking Form</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<link rel="stylesheet" type="text/css" href="css/glDatePicker.default.css">
+	</head>
+	<body>
+		<ul class="cb-slideshow">
+            <li id="background_image1"><span></span></li>
+            <li id="background_image2"><span></span></li>
+            <li id="background_image3"><span></span></li>
+            <li id="background_image4"><span></span></li>
+            <li id="background_image5"><span></span></li>
+            <li id="background_image6"><span></span></li>
+        </ul>	
+		<header>
+			<div id="header_inner">
+				<a href="index.html"><img id="logo" src="images/logo.png" alt="Fly to the limit logo">
+				</a>
+				<div id="borders">
+					<ul class="titles">
+						<li><div><h1 id="title1">Ready when you are.</h1></div></li>
+						<li><div><h1 id="title2">What dreams are made of</h1></div></li>
+			            <li><div><h1 id="title3">Front row for the sunset</h1></div></li>
+			            <li><div><h1 id="title4">Get a new perspective</h1></div></li>
+			            <li><div><h1 id="title5">Up, up and away!</h1></div></li>
+			            <li><div><h1 id="title6">Adventure starts here.</h1></div></li>
+		        	</ul>
+				</div>
+			</div>
+			<div class="background_selectors_container">
+				<ul class="background_selectors">
+		            <li id="dot_nav1"><span></span><div></div></li>
+		            <li id="dot_nav2"><span></span><div></div></li>
+		            <li id="dot_nav3"><span></span><div></div></li>
+		            <li id="dot_nav4"><span></span><div></div></li>
+		            <li id="dot_nav5"><span></span><div></div></li>
+		            <li id="dot_nav6"><span></span><div></div></li>
+		        </ul>		
+		    </div>    
+		</header>
+		<main>
+			<div class="menu_bar">
+				<ul>
+					<li class="yellow_top"><a href="scenic_flights.html">SCENIC<br>FLIGHTS</a></li>
+					<li class="yellow_selection"><a href="high_thrills.html">HIGH<br>THRILLS</a></li>
+					<li class="yellow_selection"><a href="custom_charters.html">CUSTOM<br>CHARTERS</a></li>
+					<li class="yellow_selection"><a href="tramper_services.html">TRAMPER<br>SERVICES</a></li>
+					<li class="yellow_selection"><a href="our_gallery.html">OUR<br>GALLERY</a></li>
+					<li class="yellow_selection"><a href="about_us.html">ABOUT<br>US</a></li>
+					<li class="yellow_selection no_line"><a href="contact_us.html">CONTACT<br>US</a></li>
+				</ul>
+			</div>
+			<form method="post" action="photography_flight_booking_confirmation.html" class="form_dimensions" id="contact-form">
+				<h5>BOOK YOUR PROFESSIONAL PHOTOGRAPHY FLIGHT</h5>
+				<div class="form_group">
+					<p>Your details:</p>
+					<p class="name">
+						<input name="name" type="text" placeholder="Name" id="name" required minlength="3">
+					</p>
+					<span id="name-error"></span>
+					<p class="email">
+						<input name="email" type="email" placeholder="Email" id="email" required>
+					</p>
+					<span id="email-error"></span>
+					<p class="phone">
+						<input name="phNum" type="tel" placeholder="Ph." id="phNum" required>
+					</p>
+					<span id="phNum-error"></span>
+				</div>
+				<div class="form_group">				
+					<p>Select your flight:</p>
+				</div>
+				<p><span id="flight_option1-error"></span></p>		
+				<div class="form_group">					
+					<div class="five_columns">
+						<input type="radio" name="flight_option1" id="cessna_button" class="hidden radio_label">
+						<label for="cessna_button" class="button_label2"><img class="aircraft_button_img" src="images/cessna.png" alt="cessna aircraft button"></label>
+					</div>
+					<div class="five_columns" id="five_column_gap">	
+						<p class="aircraft_button_side_text">$350/hr pp</p>
+						<p class="tiny_font">3/5 seats</p>
+					</div><!--
+					--><div class="five_columns">
+						<input type="radio" name="flight_option1" id="helicopter_button" class="hidden radio_label">
+						<label for="helicopter_button" class="button_label2"><img class="aircraft_button_img" src="images/helicopter.png" alt="helicopter aircraft button"></label>
+					</div>
+					<div class="five_columns last_box_no_margin">
+						<p class="aircraft_button_side_text">$450/hr pp</p>
+						<p class="tiny_font">5 seats</p>
+					</div>
+				</div>
+				<div class="form_group">	
+				<p><span id="flight_option2-error"></span></p>
+					<div class="two_columns">		
+						<input type="radio" name="flight_option2" id="thirty_min_button" class="hidden radio_label">
+						<label for="thirty_min_button" class="button_label1">1 Hour</label>
+					</div><!--
+					--><div class="two_columns last_box_no_margin">
+						<input type="radio" name="flight_option2" id="sixty_min_button" class="hidden radio_label">
+						<label for="sixty_min_button" class="button_label1">2 Hours</label>
+					</div>
+				</div>
+				<p><span id="flight_option3-error"></span></p>
+				<div class="form_group">	
+					<div class="two_columns">
+						<input type="radio" name="flight_option3" id="doors_on_button" class="hidden radio_label">
+						<label for="doors_on_button" class="button_label1">Doors On</label>
+					</div><!--
+					--><div class="two_columns last_box_no_margin">
+						<input type="radio" name="flight_option3" id="doors_off_button" class="hidden radio_label">
+						<label for="doors_off_button" class="button_label1">Doors Off</label>
+					</div>
+				</div>			
+				<p><span id="passengers-error"></span></p>		
+				<div class="form_group">						
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button1" class="hidden radio_label">
+						<label for="passenger_button1" class="button_label2"><img class="passenger_img" src="images/1_person.png" alt="1 passenger button"></label>
+					</div>
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button2" class="hidden radio_label">
+						<label for="passenger_button2" class="button_label2"><img class="passenger_img" src="images/2_person.png" alt="2 passengers button"></label>
+					</div>					
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button3" class="hidden radio_label">
+						<label for="passenger_button3" class="button_label2"><img class="passenger_img" src="images/3_person.png" alt="3 passengers button"></label>
+					</div>
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button4" class="hidden radio_label">
+						<label for="passenger_button4" class="button_label2"><img class="passenger_img" src="images/4_person.png" alt="4 passengers button"></label>
+					</div>
+					<div class="five_columns last_box_no_margin">
+						<input type="radio" name="passengers" id="passenger_button5" class="hidden radio_label">
+						<label for="passenger_button5" class="button_label2"><img class="passenger_img" src="images/5_person.png" alt="5 passengers button"></label>
+					</div>								
+				</div>			
+				<div class="form_group">
+					<p>Your prefered Date &amp; Time:</p>
+				</div>
+				<div class="form_group">				
+					<div class="two_columns">
+					</div><!--
+					--><div class="two_columns last_box_no_margin">
+						<span id="time_option-error"></span>
+						<div class= "form_group">
+							<input type="radio" name="time_option" id="seven_am_button" class="hidden radio_label">
+							<label for="seven_am_button" class="button_label1">7 AM</label>
+						</div><!--
+						--><div class= "form_group">
+							<input type="radio" name="time_option" id="nine_am_button" class="hidden radio_label">
+							<label for="nine_am_button" class="button_label1">9 AM</label>
+						</div><!--
+						--><div class= "form_group">
+							<input type="radio" name="time_option" id="twelve_pm_button" class="hidden radio_label">
+							<label for="twelve_pm_button" class="button_label1">12 PM</label>
+						</div><!--
+						--><div class= "form_group">
+							<input type="radio" name="time_option" id="three_pm_button" class="hidden radio_label">
+							<label for="three_pm_button" class="button_label1">3 PM</label>
+						</div>
+					</div>
+				</div>
+				<div class="form_group">					
+					<p>Total: $0.00</p>
+					<p class="tiny_font">Payable prior to your flight<br>All major credit cards accepted</p>
+					<button class="normal_button" type="submit">Book</button>
+				</div>
+			</form>
+			<div class="sidebar_section">
+				<img class="large_aircraft_icon" src="images/large_cessna2_icon.png" alt="large cessna icon">
+				<p>Cessna-172 Skyhawk</p><p class="tiny_font">Great for low level sightseeing<br>3 passenger seats</p>
+				<p>Cessna Turbo Stationair</p><p class="tiny_font">Great for larger groups<br>5 passenger seats</p>
+				<img class="large_aircraft_icon" src="images/large_helicopter_icon.png" alt="large helicopter icon">
+				<p>Helicopter</p><p class="tiny_font">Land pretty much anywhere<br>5 passenger seats</p><p>Pilot: John “Doc” Holliday</p>
+			</div>
+			<div id="mydate" gldp-id="mydate">
+				<div id="my_calendar" gldp-el="mydate" style="width: 220px; height:185px; position:absolute; top:70px; left:100px;">
+		    	</div>
+		    </div>			
+		</main>
+		<footer>
+			<div class="footer_box">
+				<ul>
+					<li class="footer_title">WEATHER</li>
+					<li class="large_footer_font">14<sup>c</sup></li>
+					<li>Clear Skies</li>
+				</ul>
+				<ul>
+					<li class="footer_title">QUEENSTOWN</li>
+					<li>Ph. 03 123 4567</li>
+					<li>queenstown@fttl.com</li>
+					<li>12 Main St,</li>
+					<li>Queenstown</li>
+				</ul>
+				<ul>
+					<li class="footer_title">WANAKA</li>
+					<li>Ph. 03 765 4321</li>
+					<li>wanaka@fttl.com</li>
+					<li>8 Victoria St,</li>
+					<li>Wanaka</li>
+				</ul>
+				<ul>
+					<li class="footer_title">CONNECT</li>
+					<li id="social_media"><a href="www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>	
+					<a href="www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+					<a href="www.instagram.com"><img src="images/instagram.png" alt="instagram icon"></a>
+					<a href="contact_us.html"><img src="images/mail.png" alt="email us icon"></a></li>
+				</ul>
+			</div>
+		</footer>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	    <script src="js/glDatePicker.js"></script>
+
+	    <script type="text/javascript">
+	        $(window).load(function()
+	        {
+	            $('#mydate').glDatePicker();
+	            $('#mydate').click();
+	        });
+	    </script>	
+	    <script type="text/javascript" src="js/script.js"></script>	
+	 	<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+
+				var contactForm = document.querySelector('#contact-form');
+
+				formValidation(contactForm);
+			});
+	 	</script>		    
+	</body>
+</html>

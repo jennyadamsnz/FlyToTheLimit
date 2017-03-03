@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<meta name="author" content="Jenny Adams">
+			<meta name="description" content="Fly to the Limit Tramper Services; book your drop-offs pick-up and re-stocks for longer tramping trips">
+			<meta name="keywords" content="Fly to the Limit, trampers, tramping, flight, Queenstown, Wanaka, flying, New Zealand, aviation, helicopter, Book, pick-up, drop-off, re-stock">	
+		<title>FTTL Tramper Services Enquiry Form</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<ul class="cb-slideshow">
+            <li id="background_image1"><span></span></li>
+            <li id="background_image2"><span></span></li>
+            <li id="background_image3"><span></span></li>
+            <li id="background_image4"><span></span></li>
+            <li id="background_image5"><span></span></li>
+            <li id="background_image6"><span></span></li>
+        </ul>
+		<header>
+			<div id="header_inner">
+				<a href="index.html"><img id="logo" src="images/logo.png" alt="Fly to the limit logo">
+				</a>
+				<div id="borders">
+					<ul class="titles">
+						<li><div><h1 id="title1">Ready when you are.</h1></div></li>
+						<li><div><h1 id="title2">What dreams are made of</h1></div></li>
+			            <li><div><h1 id="title3">Front row for the sunset</h1></div></li>
+			            <li><div><h1 id="title4">Get a new perspective</h1></div></li>
+			            <li><div><h1 id="title5">Up, up and away!</h1></div></li>
+			            <li><div><h1 id="title6">Adventure starts here.</h1></div></li>
+		        	</ul>
+				</div>
+			</div>
+			<div class="background_selectors_container">
+				<ul class="background_selectors">
+		            <li id="dot_nav1"><span></span><div></div></li>
+		            <li id="dot_nav2"><span></span><div></div></li>
+		            <li id="dot_nav3"><span></span><div></div></li>
+		            <li id="dot_nav4"><span></span><div></div></li>
+		            <li id="dot_nav5"><span></span><div></div></li>
+		            <li id="dot_nav6"><span></span><div></div></li>
+		        </ul>		
+		    </div>    
+		</header>
+		<main>
+			<div class="menu_bar">
+				<ul>
+					<li class="yellow_selection"><a href="scenic_flights.html">SCENIC<br>FLIGHTS</a></li>
+					<li class="yellow_selection"><a href="high_thrills.html">HIGH<br>THRILLS</a></li>
+					<li class="yellow_selection"><a href="custom_charters.html">CUSTOM<br>CHARTERS</a></li>
+					<li class="yellow_top"><a href="tramper_services.html">TRAMPER<br>SERVICES</a></li>
+					<li class="yellow_selection"><a href="our_gallery.html">OUR<br>GALLERY</a></li>
+					<li class="yellow_selection"><a href="about_us.html">ABOUT<br>US</a></li>
+					<li class="yellow_selection no_line"><a href="contact_us.html">CONTACT<br>US</a></li>
+				</ul>
+			</div>
+			<form method="post" action="tramper_services_enquiry_confirmation.html" class="form_dimensions" id="contact-form">
+				<h5>TRAMPER SERVICES ENQUIRY FORM</h5>
+				<div class="form_group">
+					<p>Your details:</p>
+					<p class="name">
+						<input name="name" type="text" placeholder="Name" id="name" required minlength="3">
+					</p>
+					<span id="name-error"></span>
+					<p class="email">
+						<input name="email" type="email" placeholder="Email" id="email" required>
+					</p>
+					<span id="email-error"></span>
+					<p class="phone">
+						<input name="phNum" type="tel" placeholder="Ph." id="phNum" required>
+					</p>
+					<span id="phNum-error"></span>
+				</div>	
+				<div class="form_group" id="shift">
+					<p class="subtitle">Your Needs:</p>
+					<p><span id="checkbox-error"></span></p>
+					<div class="three_columns dropdown_align_top">
+						<input type="checkbox" name="dropdown" id="drop_off" class="hidden radio_label">
+						
+						<label id="dropOff" for="drop_off" class="button_label1">Drop-Off
+						</label>
+						<div id="dropOff-Dropdown" class="dropdown-content">
+							<p>
+								<input name="date" type="text" placeholder="Date" id="drop-off_date">
+								<span id="drop-off_date-error"></span>	
+							</p>
+							<p>
+								<input name="time" type="text" placeholder="Time" id="drop-off_time">
+								<span id="drop-off_time-error"></span>	
+							</p>
+							<p>
+								<input name="location" type="text" placeholder="Location" id="drop-off_location">
+								<span id="drop-off_location-error"></span>	
+							</p>
+						</div>								
+					</div><!--
+					--><div class="three_columns dropdown_align_top">
+						<input type="checkbox" name="dropdown" id="pick_up" class="hidden radio_label">
+						<label id="pickUp" for="pick_up" class="button_label1">Pick-Up</label>
+						<div id="pickUp-Dropdown" class="dropdown-content">	
+							<p>
+								<input name="date" type="text" placeholder="Date" id="pick-up_date">
+								<p><span id="pick-up_date-error"></span></p>	
+							</p>
+							<p>
+								<input name="time" type="text" placeholder="Time" id="pick-up_time">
+								<span id="pick-up_time-error"></span>	
+							</p>
+							<p>
+								<input name="location" type="text" placeholder="Location" id="pick-up_location">
+								<span id="pick-up_location-error"></span>	
+							</p>		
+						</div>
+					</div><!--
+					--><div class="three_columns dropdown_align_top_no_margin">
+						<input type="checkbox" name="dropdown" id="re_stock" class="hidden radio_label">
+						<label id="reStock" for="re_stock" class="button_label1">Re-Stock</label>
+						<div id="reStock-Dropdown" class="dropdown-content">	
+							<p>
+								<input name="date" type="text" placeholder="Date" id="re-stock_date">
+								<p><span id="re-stock_date-error"></span></p>	
+							</p>
+							<p>
+								<input name="time" type="text" placeholder="Time" id="re-stock_time">
+								<span id="re-stock_time-error"></span>	
+							</p>
+							<p>
+								<input name="location" type="text" placeholder="Location" id="re-stock_location">
+								<span id="re-stock_location-error"></span>	
+							</p>		
+						</div>		
+					</div>							
+				</div>
+				<div class="form_group">
+					<p><span id="passengers-error"></span></p>							
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button1" class="hidden radio_label">
+						<label for="passenger_button1" class="button_label2"><img class="passenger_img" src="images/1_person.png" alt="1 passenger button"></label>
+					</div>
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button2" class="hidden radio_label">
+						<label for="passenger_button2" class="button_label2"><img class="passenger_img" src="images/2_person.png" alt="2 passengers button"></label>
+					</div>					
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button3" class="hidden radio_label">
+						<label for="passenger_button3" class="button_label2"><img class="passenger_img" src="images/3_person.png" alt="3 passengers button"></label>
+					</div>
+					<div class="five_columns">
+						<input type="radio" name="passengers" id="passenger_button4" class="hidden radio_label">
+						<label for="passenger_button4" class="button_label2"><img class="passenger_img" src="images/4_person.png" alt="4 passengers button"></label>
+					</div>
+					<div class="five_columns last_box_no_margin">
+						<input type="radio" name="passengers" id="passenger_button5" class="hidden radio_label">
+						<label for="passenger_button5" class="button_label2"><img class="passenger_img" src="images/5_person.png" alt="5 passengers button"></label>
+					</div>			
+				</div>	
+				<div class="form_group">						
+					<p>
+						<textarea id="additional_details" name="message" placeholder="Trip Details (Additional info e.g. Personal Locator Beacon details, special requirements etc.)" minlength="0" maxlength="400" rows="5" cols="50"></textarea>
+					</p>
+					<span id="additional_details-error"></span>
+				</div>
+				<div class="form_group">						
+					<button class="normal_button" type="submit">Submit Quote Request</button>	
+				</div>
+			</form>					
+			<div class="sidebar_section">
+				<img class="large_aircraft_icon" src="images/large_helicopter_icon.png" alt="large helicopter icon">
+				<p>Helicopter</p><p class="tiny_font">Land pretty much anywhere<br>5 passenger seats</p>
+			</div>
+		</main>
+		<footer>
+			<div class="footer_box">
+				<ul>
+					<li class="footer_title">WEATHER</li>
+					<li class="large_footer_font">14<sup>c</sup></li>
+					<li>Clear Skies</li>
+				</ul>
+				<ul>
+					<li class="footer_title">QUEENSTOWN</li>
+					<li>Ph. 03 123 4567</li>
+					<li>queenstown@fttl.com</li>
+					<li>12 Main St,</li>
+					<li>Queenstown</li>
+				</ul>
+				<ul>
+					<li class="footer_title">WANAKA</li>
+					<li>Ph. 03 765 4321</li>
+					<li>wanaka@fttl.com</li>
+					<li>8 Victoria St,</li>
+					<li>Wanaka</li>
+				</ul>
+				<ul>
+					<li class="footer_title">CONNECT</li>
+					<li id="social_media"><a href="www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>	
+					<a href="www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+					<a href="www.instagram.com"><img src="images/instagram.png" alt="instagram icon"></a>
+					<a href="contact_us.html"><img src="images/mail.png" alt="email us icon"></a></li>
+				</ul>
+			</div>
+		</footer>	
+	    <script type="text/javascript" src="js/script.js"></script>			
+	 	<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+
+				var contactForm = document.querySelector('#contact-form');
+
+				formValidation(contactForm);
+			});
+	 	</script>	
+		<script type="text/javascript">
+			window.addEventListener('load', dropMenu);
+		</script>
+	</body>
+</html>
